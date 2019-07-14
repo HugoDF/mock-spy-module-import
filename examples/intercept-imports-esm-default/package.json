@@ -1,0 +1,27 @@
+{
+  "name": "intercept-imports-esm-default",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Intercept ESM default import with Jest",
+  "keywords": [],
+  "author": "Hugo Di Francesco",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "babel-jest": "^24.8.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest": "^24.8.0",
+    "jest-cli": "^24.8.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "testRegex": ".*.jest-test.js$"
+  },
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs"
+    ]
+  }
+}

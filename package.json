@@ -1,0 +1,33 @@
+{
+  "name": "mock-spy-module-import",
+  "version": "1.0.0",
+  "description": "Mock/Spy module imports or internals with Jest",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna exec yarn",
+    "test": "lerna exec jest --concurrency 1",
+    "lint": "xo ./examples/**/*.js",
+    "format": "xo ./examples/**/*.js --fix"
+  },
+  "keywords": [],
+  "author": "Hugo Di Francesco",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.1.0",
+    "jest-cli": "^24.1.0",
+    "lerna": "^3.15.0",
+    "xo": "^0.24.0"
+  },
+  "xo": {
+    "prettier": true,
+    "space": true,
+    "globals": [
+      "jest",
+      "test",
+      "expect"
+    ]
+  },
+  "workspaces": [
+    "examples/*"
+  ]
+}

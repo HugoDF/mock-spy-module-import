@@ -1,0 +1,16 @@
+{
+  "name": "intercept-imports-cjs",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Intercept CommonJS import with Jest",
+  "keywords": [],
+  "author": "Hugo Di Francesco",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "jest-cli": "^24.8.0"
+  },
+  "jest": {
+    "testRegex": ".*.jest-test.js$"
+  }
+}
