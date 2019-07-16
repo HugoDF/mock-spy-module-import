@@ -1,4 +1,4 @@
-jest.mock('./db.js', () => ({
+jest.mock('./db', () => ({
   get: jest.fn(),
   set: jest.fn()
 }));
