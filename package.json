@@ -13,8 +13,6 @@
   "author": "Hugo Di Francesco",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^24.1.0",
-    "jest-cli": "^24.1.0",
     "lerna": "^3.15.0",
     "xo": "^0.24.0"
   },
