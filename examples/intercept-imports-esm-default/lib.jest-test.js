@@ -9,14 +9,14 @@ jest.mock('./db', () => ({
 
 const {addTodo, getTodo} = lib;
 
+beforeEach(() => jest.clearAllMocks());
+
 test('ESM Default Export > addTodo > inserts with new id', async () => {
-  jest.clearAllMocks();
   await addTodo({name: 'new todo'});
   expect(mockDb.set).toHaveBeenCalledWith('todos:1', {name: 'new todo', id: 1});
 });
 
 test('ESM Default Export > getTodo > returns output of db.get', async () => {
-  jest.clearAllMocks();
   mockDb.get.mockResolvedValueOnce({
     id: 1,
     name: 'todo-1'

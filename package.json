@@ -22,7 +22,8 @@
     "globals": [
       "jest",
       "test",
-      "expect"
+      "expect",
+      "beforeEach"
     ]
   },
   "workspaces": [
