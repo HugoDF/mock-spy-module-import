@@ -1,0 +1,16 @@
+{
+  "name": "spy-module-cjs",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Spy on imported CommonJS module method calls with Jest",
+  "keywords": [],
+  "author": "Hugo Di Francesco",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "jest-cli": "^24.8.0"
+  },
+  "jest": {
+    "testRegex": ".*.jest-test.js$"
+  }
+}
