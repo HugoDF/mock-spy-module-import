@@ -4,7 +4,7 @@
   "description": "Mock/Spy module imports or internals with Jest",
   "private": true,
   "scripts": {
-    "bootstrap": "lerna exec yarn",
+    "bootstrap": "lerna bootstrap",
     "test": "lerna exec jest --concurrency 1",
     "lint": "xo ./examples/**/*.js",
     "format": "xo ./examples/**/*.js --fix"
