@@ -10,8 +10,7 @@ JavaScript import/require module testing do's and don'ts with Jest
 ## Setup
 
 1. Clone the repository
-2. Run `yarn`: installs top-level dependencies (including Lerna).
-3. Run `yarn bootstrap`: sets up each example with its dependencies.
+2. Run `yarn`: installs all required dependencies.
 4. Run `yarn test` to run all the tests.
 
 ## npm scripts

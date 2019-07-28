@@ -4,8 +4,7 @@
   "description": "Mock/Spy module imports or internals with Jest",
   "private": true,
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "test": "lerna exec jest --concurrency 1",
+    "test": "yarn workspaces run jest",
     "lint": "xo ./examples/**/*.js",
     "format": "xo ./examples/**/*.js --fix"
   },
@@ -13,7 +12,6 @@
   "author": "Hugo Di Francesco",
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^3.15.0",
     "xo": "^0.24.0"
   },
   "xo": {
