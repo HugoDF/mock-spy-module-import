@@ -7,7 +7,7 @@
   "author": "Hugo Di Francesco",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^24.8.0",
+    "jest": "^25.2.7",
     "jest-cli": "^24.8.0"
   },
   "jest": {
