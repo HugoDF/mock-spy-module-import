@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/extensions
 import lib from './lib.default-export';
 import mockDb from './db';
 
@@ -12,7 +13,7 @@ let {makeKey} = lib;
 
 beforeEach(() => jest.clearAllMocks());
 
-test("ESM Default Export > Mocking destructured makeKey doesn't work", async () => {
+test('ESM Default Export > Mocking destructured makeKey doesn’t work', async () => {
   const mockMakeKey = jest.fn(() => 'mock-key');
   makeKey = mockMakeKey;
   await getTodo(1);
@@ -20,7 +21,7 @@ test("ESM Default Export > Mocking destructured makeKey doesn't work", async () 
   expect(mockDb.get).not.toHaveBeenCalledWith('mock-key');
 });
 
-test("ESM Named Export > Mocking lib.makeKey doesn't work", async () => {
+test('ESM Named Export > Mocking lib.makeKey doesn’t work', async () => {
   const mockMakeKey = jest.fn(() => 'mock-key');
   lib.makeKey = mockMakeKey;
   await getTodo(1);
@@ -28,7 +29,7 @@ test("ESM Named Export > Mocking lib.makeKey doesn't work", async () => {
   expect(mockDb.get).not.toHaveBeenCalledWith('mock-key');
 });
 
-test("ESM Named Export > Spying lib.makeKey doesn't work", async () => {
+test('ESM Named Export > Spying lib.makeKey doesn’t work', async () => {
   const makeKeySpy = jest
     .spyOn(lib, 'makeKey')
     .mockImplementationOnce(() => 'mock-key');

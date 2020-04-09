@@ -10,7 +10,7 @@ let {makeKey} = lib;
 
 beforeEach(() => jest.clearAllMocks());
 
-test("ESM Default Export > Mocking destructured makeKey doesn't work", async () => {
+test('ESM Default Export > Mocking destructured makeKey doesn’t work', async () => {
   const mockMakeKey = jest.fn(() => 'mock-key');
   makeKey = mockMakeKey;
   await lib.getTodo(1);

@@ -1,7 +1,7 @@
 const db = require('./db');
 
 const keyPrefix = 'todos';
-const makeKey = key => `${keyPrefix}:${key}`;
+const makeKey = (key) => `${keyPrefix}:${key}`;
 
 const lib = {
   // Could also define makeKey inline like so:
