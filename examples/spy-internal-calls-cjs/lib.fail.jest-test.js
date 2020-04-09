@@ -12,7 +12,7 @@ let {makeKey} = lib;
 
 beforeEach(() => jest.clearAllMocks());
 
-test("CommonJS > Mocking destructured makeKey doesn't work", async () => {
+test('CommonJS > Mocking destructured makeKey doesn’t work', async () => {
   const mockMakeKey = jest.fn(() => 'mock-key');
   makeKey = mockMakeKey;
   await getTodo(1);
@@ -20,7 +20,7 @@ test("CommonJS > Mocking destructured makeKey doesn't work", async () => {
   expect(mockDb.get).not.toHaveBeenCalledWith('mock-key');
 });
 
-test("CommonJS > Mocking lib.makeKey doesn't work", async () => {
+test('CommonJS > Mocking lib.makeKey doesn’t work', async () => {
   const mockMakeKey = jest.fn(() => 'mock-key');
   lib.makeKey = mockMakeKey;
   await getTodo(1);
@@ -28,7 +28,7 @@ test("CommonJS > Mocking lib.makeKey doesn't work", async () => {
   expect(mockDb.get).not.toHaveBeenCalledWith('mock-key');
 });
 
-test("CommonJS > Spying lib.makeKey doesn't work", async () => {
+test('CommonJS > Spying lib.makeKey doesn’t work', async () => {
   const makeKeySpy = jest
     .spyOn(lib, 'makeKey')
     .mockImplementationOnce(() => 'mock-key');

@@ -13,7 +13,7 @@ let {makeKey} = lib;
 beforeEach(() => {
   jest.clearAllMocks();
 });
-test("CommonJS > Mocking destructured makeKey doesn't work", async () => {
+test('CommonJS > Mocking destructured makeKey doesn’t work', async () => {
   const mockMakeKey = jest.fn(() => 'mock-key');
   makeKey = mockMakeKey;
   await getTodo(1);
