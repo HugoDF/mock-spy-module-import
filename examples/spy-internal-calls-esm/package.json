@@ -7,7 +7,7 @@
   "author": "Hugo Di Francesco",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.10.3",
+    "@babel/core": "^7.10.4",
     "babel-jest": "^26.0.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "jest": "^26.1.0"
