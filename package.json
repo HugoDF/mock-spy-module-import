@@ -12,7 +12,7 @@
   "author": "Hugo Di Francesco",
   "license": "MIT",
   "devDependencies": {
-    "xo": "^0.36.1"
+    "xo": "^0.40.2"
   },
   "xo": {
     "prettier": true,
