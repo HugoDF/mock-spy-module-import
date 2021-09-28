@@ -8,7 +8,7 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.15.5",
-    "babel-jest": "^27.2.1",
+    "babel-jest": "^27.2.3",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "jest": "^27.2.1"
   },
