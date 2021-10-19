@@ -10,7 +10,7 @@
     "@babel/core": "^7.15.8",
     "babel-jest": "^27.2.5",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "jest": "^27.2.5"
+    "jest": "^27.3.1"
   },
   "jest": {
     "transform": {
