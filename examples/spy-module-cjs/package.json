@@ -7,7 +7,7 @@
   "author": "Hugo Di Francesco",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^27.3.1"
+    "jest": "^27.4.7"
   },
   "jest": {
     "testRegex": ".*.jest-test.js$"
